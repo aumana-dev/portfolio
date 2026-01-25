@@ -5,9 +5,10 @@
   padding: clamp(4rem, 10vw, 8rem) 0;
   text-align: center;
   background: linear-gradient(135deg, rgba(114, 126, 145, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  background-color: var(--bg-dark);
   position: relative;
   overflow: hidden;
-  z-index: var(--z-background);
+  z-index: 10;
 }
 
 .hero::before {
@@ -67,12 +68,12 @@
   padding: clamp(4rem, 10vw, 8rem) 0;
   position: relative;
   z-index: var(--z-section);
-  background: var(--bg-dark);
+  background: transparent;
 }
 
 .about::before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -191,7 +192,7 @@
   text-align: center;
   position: relative;
   z-index: var(--z-section);
-  background: var(--bg-dark);
+  background: transparent;
 }
 
 .contact p {

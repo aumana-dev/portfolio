@@ -48,4 +48,5 @@ body {
   color: var(--text-primary);
   background: var(--bg-dark);
   font-size: var(--font-size-base);
+  overflow-x: hidden;
 }

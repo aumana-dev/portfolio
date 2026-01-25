@@ -41,7 +41,8 @@ class ParallaxManager {
   updateHeroParallax(scrolled) {
     const hero = document.querySelector('.hero');
     if (hero && scrolled < hero.offsetTop + hero.offsetHeight) {
-      hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+      // Disabled parallax for normal scrolling
+      // hero.style.transform = `translateY(${scrolled * 0.3}px)`;
     }
   }
 
