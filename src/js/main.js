@@ -19,11 +19,11 @@ class Portfolio {
    */
   init() {
     console.log('Initializing Portfolio Application...');
-    
+
     this.initLanguageManager();
     this.initNavigationManager();
     this.initParallaxManager();
-    
+
     console.log('Portfolio Application initialized ✓');
   }
 

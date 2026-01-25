@@ -25,7 +25,7 @@ class NavigationManager {
         e.preventDefault();
         const targetId = anchor.getAttribute('href');
         const target = document.querySelector(targetId);
-        
+
         if (target) {
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
           this.closeMenu();
