@@ -1,0 +1,182 @@
+/* Animation Keyframes */
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(-30px, 50px) scale(1.1);
+  }
+  66% {
+    transform: translate(30px, -30px) scale(0.9);
+  }
+}
+
+@keyframes gridMove {
+  0% {
+    transform: perspective(500px) rotateX(60deg) translateY(0);
+  }
+  100% {
+    transform: perspective(500px) rotateX(60deg) translateY(-20px);
+  }
+}
+
+@keyframes particleFloat {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-30px) scale(1.5);
+  }
+}
+
+@keyframes circuitPulse {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Tech Grid */
+.tech-grid {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 400px;
+  height: 400px;
+  background:
+    repeating-linear-gradient(0deg, rgba(59, 130, 246, 0.05) 0px, transparent 1px, transparent 20px, rgba(59, 130, 246, 0.05) 21px),
+    repeating-linear-gradient(90deg, rgba(139, 92, 246, 0.05) 0px, transparent 1px, transparent 20px, rgba(139, 92, 246, 0.05) 21px);
+  transform: perspective(500px) rotateX(60deg);
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.6;
+  animation: gridMove 15s linear infinite;
+}
+
+/* Particles */
+.tech-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 50%;
+  opacity: 0;
+  animation: particleFloat 8s ease-in-out infinite;
+}
+
+.particle:nth-child(1) {
+  left: 10%;
+  top: 20%;
+  animation-delay: 0s;
+}
+
+.particle:nth-child(2) {
+  left: 30%;
+  top: 60%;
+  animation-delay: 2s;
+}
+
+.particle:nth-child(3) {
+  left: 50%;
+  top: 30%;
+  animation-delay: 4s;
+}
+
+.particle:nth-child(4) {
+  left: 70%;
+  top: 70%;
+  animation-delay: 1s;
+}
+
+.particle:nth-child(5) {
+  left: 85%;
+  top: 40%;
+  animation-delay: 3s;
+}
+
+.particle:nth-child(6) {
+  left: 20%;
+  top: 80%;
+  animation-delay: 5s;
+}
+
+.particle:nth-child(7) {
+  left: 60%;
+  top: 15%;
+  animation-delay: 2.5s;
+}
+
+.particle:nth-child(8) {
+  left: 40%;
+  top: 85%;
+  animation-delay: 1.5s;
+}
+
+/* Circuit Lines */
+.circuit-line {
+  position: absolute;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.circuit-line:nth-child(9) {
+  top: 70%;
+  left: 50%;
+  width: 40%;
+  transform: translateX(-50%);
+  animation: circuitPulse 4s ease-in-out infinite;
+}
+
+.circuit-line:nth-child(10) {
+  top: 78%;
+  left: 50%;
+  width: 50%;
+  transform: translateX(-50%);
+  animation: circuitPulse 5s ease-in-out infinite 1s;
+}
+
+.circuit-line:nth-child(11) {
+  top: 86%;
+  left: 50%;
+  width: 35%;
+  transform: translateX(-50%);
+  animation: circuitPulse 6s ease-in-out infinite 2s;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Allan Umana - Bilingual Software Developer Portfolio",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "python -m http.server 8000 --directory src",
+    "dev": "python -m http.server 8000 --directory src",
+    "build": "echo 'No build step required for vanilla JS project'",
+    "lint": "eslint src/js --fix || true"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "full-stack",
+    "responsive",
+    "parallax"
+  ],
+  "author": "Allan Umana <allan.umana@outlook.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aumana-dev/portfolio.git"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  }
+}
